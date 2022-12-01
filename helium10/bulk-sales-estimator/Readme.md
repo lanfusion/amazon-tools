@@ -21,15 +21,15 @@ This tool will pull Helium10 monthly sales estimations in bulk from a list of Am
 12. Open command prompt/powershell/terminal, etc. Navigate to the directory where `helium.py` is located and run `python helium.py`. When the app finishes, the results will be stored in asins.csv in the same folder. Results will be ASIN, # of Monthly Sales, and the HTTP code (for information). 
 
 ## FAQ
-Q: I am getting error 400, Limit exceeded. How do fix this?
+
+Q: I am getting error 400, Limit exceeded. How do fix this?<br>
 A: _There is a hard cap on the max searches you can do per day from H10, try again tomorrow. If you need more, buy another Helium10 account and repeat the steps from 5-11 with the separate account._
 
-Q: I am getting error 404 on some of my ASINs. 
+Q: I am getting error 404 on some of my ASINs.<br>
 A: _Either the ASIN does not exist (check by entering the ASIN in the respective marketplace) or Helium10 has no data about the ASIN._
 
-Q: I am getting error 401 Unauthorized. 
+Q: I am getting error 401 Unauthorized.<br>
 A: _Your cookie is invalid, make sure you followed steps 5-11 in the Setup Instructions._
 
-Q: It runs a bit slow, is there a way to make it faster?
+Q: It runs a bit slow, is there a way to make it faster?<br>
 A: _This is not officially supported, as such you may or may not have issues gathering data from Helium10 by adjusting the sleep timer. You can change line 75 on `helium.py` from `2 + random.randint(1, 3)` to a fixed value like `0` or `1` or whatever works for you. Use at your own risk._
-
