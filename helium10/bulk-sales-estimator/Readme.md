@@ -6,6 +6,14 @@ This tool will pull Helium10 monthly sales estimations in bulk from a list of Am
 * [Python 3](https://www.python.org/downloads/)
 * [Get cookies.txt Chrome Extension](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid?hl=en)
 
+## Disable Size Values in Exported Cookie.
+In a latest version of the Get_Cookies.txt Chrome Extension, it adds a size value to the exported cookie file which results in `ValueError: to many values to unpack` while running the script. After installing the extension:
+1. Click the extension in the top right corner of your browser. 
+2. In the popup window, click the gear icon in the top right corner of the popup.
+3. In the Settings window, make sure that `Include Cookie Size Values` in unchecked or disabled.
+4. Proceed to setup instructions.
+
+
 ## Setup Instructions
 1. Clone this git repo.
 2. Download and Install Python 3 (**make sure pip is selected during install options**) or install it manually from [here](https://pip.pypa.io/en/stable/installation/).
@@ -21,6 +29,8 @@ This tool will pull Helium10 monthly sales estimations in bulk from a list of Am
 12. Open command prompt/powershell/terminal, etc. Navigate to the directory where `helium.py` is located and run `python helium.py`. When the app finishes, the results will be stored in asins.csv in the same folder. Results will be ASIN, # of Monthly Sales, and the HTTP code (for information). 
 
 ## FAQ
+Q: I am getting `No module named 'requests`, when I start the script<br>
+A: _The Python module, requests, is not found. Make sure you performed step 4. If that does not work, reinstall Python._
 
 Q: I am getting error 400, Limit exceeded. How do fix this?<br>
 A: _There is a hard cap on the max searches you can do per day from H10, try again tomorrow. If you need more, buy another Helium10 account and repeat the steps from 5-11 with the separate account._
