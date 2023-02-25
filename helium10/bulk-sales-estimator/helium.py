@@ -47,7 +47,7 @@ if __name__ == "__main__":
     fname = "asins.txt"
     outfname = "asins.csv"
 
-    cj = MozillaCookieJar('helium10.com_cookies.txt')
+    cj = MozillaCookieJar('members.helium10.com_cookies.txt')
     cj.load(ignore_expires=True)
 
     s = requests.Session()
