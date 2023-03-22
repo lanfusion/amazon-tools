@@ -4,7 +4,7 @@ This tool will pull Helium10 monthly sales estimations in bulk from a list of Am
 ## Requirements
 * [Paid Helium10 Account (Platinum or higher)](https://www.helium10.com/)
 * [Python 3](https://www.python.org/downloads/)
-* [Get cookies.txt LOCALLY Chrome Extension](https://chrome.google.com/webstore/detail/get-cookiestxt-locally/)
+* [Get cookies.txt LOCALLY Chrome Extension](https://chrome.google.com/webstore/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)
 
 ## Disable Size Values in Exported Cookie.
 In a latest version of the Get_Cookies.txt Chrome Extension, it adds a size value to the exported cookie file which results in `ValueError: to many values to unpack` while running the script. After installing the extension, __and__ before exporting the cookie file:
