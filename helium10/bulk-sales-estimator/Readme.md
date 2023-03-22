@@ -4,7 +4,7 @@ This tool will pull Helium10 monthly sales estimations in bulk from a list of Am
 ## Requirements
 * [Paid Helium10 Account (Platinum or higher)](https://www.helium10.com/)
 * [Python 3](https://www.python.org/downloads/)
-* [Get cookies.txt Chrome Extension](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid?hl=en)
+* [Get cookies.txt LOCALLY Chrome Extension](https://chrome.google.com/webstore/detail/get-cookiestxt-locally/)
 
 ## Disable Size Values in Exported Cookie.
 In a latest version of the Get_Cookies.txt Chrome Extension, it adds a size value to the exported cookie file which results in `ValueError: to many values to unpack` while running the script. After installing the extension, __and__ before exporting the cookie file:
@@ -41,3 +41,6 @@ A: _Your cookie is invalid, make sure you followed steps 5-11 in the Setup Instr
 
 Q: It runs a bit slow, is there a way to make it faster?<br>
 A: _This is not officially supported, as such you may or may not have issues gathering data from Helium10 by adjusting the sleep timer. You can change line 75 on `helium.py` from `2 + random.randint(1, 3)` to a fixed value like `0` or `1` or whatever works for you. Use at your own risk._
+
+Q: How do I use this with multiple accounts?<br>
+A: _Perform Step 1, in separate folder, for every account you own. Then repeat all the steps starting from 6 for each account in its own folder._
